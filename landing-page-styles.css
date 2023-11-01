@@ -5,13 +5,13 @@
     font-family: Lexend, Poppins;
 }
 
-ul {
+.dropdown {
     display: flex;
     justify-content: space-between;
     list-style: none;
 }
 
-a {
+.dropbtn, a {
     display: block;
     text-decoration: none;
     text-transform: uppercase;
@@ -54,36 +54,53 @@ nav {
     width: 150px;
 }
 
-nav ul {
+nav, .dropdown {
     width: 100%;
     transition: .3s;
     padding: 40px 0;
 }
-nav ul li:nth-child(3) {
-    margin-left: 250px;
-}
-nav ul li a {
+
+.dropbtn {
+    background-color: #0b0414;
     color: #7b75a0;
+    padding: 14px 28px;
+    font-size: 1.2em;
+    border: none;
     font-weight: 700;
 }
-.menuList, ul li a:hover {
-    color: #d88e54;
-    cursor: pointer;
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #0b0414;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+    color: #7b75a0;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover {
+    background-color: #9dffca;
+    color: #0b0414;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
 }
 
-#menu {
-    display: none;
+.dropdown:hover .dropbtn {
+    background-color: #d88e54;
+    color: #0b0414;
 }
-label {
-    color: #7b75a0;
-    font-size: 1.2em;
-    padding: 15px 0;
-    display: none;
-}
+
 @media (max-width: 960px) {
-    label {
-        display: block;
-    }
     .container {
         padding: 0 40px;
     }
@@ -99,7 +116,7 @@ label {
     nav {
         padding: 40px 0;
     }
-    nav ul {
+    nav, .dropdown {
         position: absolute;
         top: 50px;
         left: 0;
@@ -110,20 +127,18 @@ label {
         width: 100%;
         height: 100vh;
     }
-    #menu:checked ~ ul {
-        left: 0;
-    }
-    nav ul li {
+
+    nav, .dropdown, .dropdown-content {
         margin: 0 !important;
         width: 100%;
     }
-    nav ul li a {
+    nav, .dropdown, .dropdown-content, a {
         border: 1px solid #9dffca;
         padding: 15px 0;
         margin: 10px 0;
         text-align: center;
     }
-    nav ul li a:hover {
+    nav, .dropdown, .dropdown-content, a:hover {
         background-color: #d88e54;;
         color: #0b0414;
     }
