@@ -7,6 +7,7 @@
 
 body {
     background-image: radial-gradient(#2a2948, #130b22);
+    text-align: center;
 }
 
 ul {
@@ -57,6 +58,14 @@ nav {
     width: 150px;
 }
 
+.logo-main-page {
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 450px;
+}
+
 nav ul {
     width: 100%;
     transition: .3s;
@@ -78,6 +87,32 @@ a:hover {
     -20px 0 300px #d88e54,            
     0 0 11px #d88e54,            
     10px 0 60px #d88e54; 
+}
+
+section {
+    min-height: 100vh;
+    padding: 70px 0;
+}
+
+#main-page {
+    display: flex;
+    flex-direction: column;
+    max-width: 960px;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#main-page, p {
+    color: #9dffca;
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    font-weight: 700;
+    letter-spacing: 8px;
+    transition: .3s;
+    margin-top: 145px;
 }
 
 #menu {
