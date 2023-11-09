@@ -147,6 +147,78 @@ section {
     padding-top: -100vh;
 }
 
+#menu-section {
+    max-width: 960px;
+    margin: 0 auto;
+    height: 600px;
+}
+#menu-section, .upper-section {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    width: 100vh;
+    justify-content: space-between;
+}
+#menu-section, .lower-section {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    width: 100vh;
+    justify-content: space-between;
+}
+#menu-function {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#menu-function, #menu-section {
+    display: flex;
+    flex-direction: column;
+}
+#menu-function, label {
+    color: #534376;
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    font-weight: 700;
+    transition: .3s;
+}
+
+.selector {
+    display: flex;
+    flex-direction: column;
+}
+.slider {
+    display: flex;
+    flex-direction: column;
+}
+.lower-section {
+    display: flex;
+    flex-direction: row;
+}
+
+label {
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+}
+select {
+    width: 40vh;
+    font-size: 1.2em;
+}
+input {
+    width: 40vh;
+}
+
+datalist {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    writing-mode: vertical-lr;
+    width: 200px;
+  }
+
 @media (max-width: 960px) {
     .container {
         padding: 0 40px;

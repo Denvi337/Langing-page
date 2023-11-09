@@ -45,6 +45,38 @@
     <main>
         <section id="second-page">
             <h1>AI Performance on Historical Data</h1>
+            <div id="menu-function">
+                <fieldset id="menu-section">
+                    <div class="upper-section">
+                        <label class="selector">Currency
+                            <select class="currency">
+                                <option>Ethereum</option>
+                                <option></option>
+                                <option></option>
+                                <option></option>
+                            </select>
+                        </label>
+                        <label class="selector">Strategy
+                            <select class="strategy">
+                                <option>Respond to the rise</option>
+                                <option></option>
+                                <option></option>
+                                <option></option>
+                            </select>
+                        </label>
+                    </div>
+                    <div id="lower-section">
+                        <label class="slider">Length of investment, month
+                            <input id="length" type="range" min="1" max="18" oninput="this.nextElementSibling.value = this.value"/>
+                            <output>6</output>
+                        </label>
+                        <label class="slider">Initial amount, $
+                            <input id="amount" type="range" min="500" max="100000" oninput="this.nextElementSibling.value = this.value"/>
+                            <output>63000</output>
+                        </label>
+                    </div>
+                </fieldset>
+            </div>
         </section>
     </main>    
 </body>
