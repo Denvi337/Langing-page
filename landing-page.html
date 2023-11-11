@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@500;700&family=Noto+Serif&family=Poppins:wght@500;700&display=swap" rel="stylesheet">
     <script src="landing-page.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.js" integrity="sha512-6LKCH7i2+zMNczKuCT9ciXgFCKFp3MevWTZUXDlk7azIYZ2wF5LRsrwZqO7Flt00enUI+HwzzT5uhOvy6MNPiA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 <body>
     <div id="first-page">
@@ -47,33 +48,38 @@
             <h1>AI Performance on Historical Data</h1>
             <div id="menu-function">
                 <fieldset id="menu-section">
-                    <div class="upper-section">
-                        <label class="selector">Currency
-                            <select class="currency">
-                                <option>Ethereum</option>
-                                <option></option>
-                                <option></option>
-                                <option></option>
-                            </select>
-                        </label>
-                        <label class="selector">Strategy
-                            <select class="strategy">
-                                <option>Respond to the rise</option>
-                                <option></option>
-                                <option></option>
-                                <option></option>
-                            </select>
-                        </label>
+                    <div id="menu">
+                        <div class="selectors">
+                            <label class="selector"><span>Currency</span>
+                                <select class="currency">
+                                    <option>Ethereum</option>
+                                    <option>Bitcoin</option>
+                                    <option>Litecoin</option>
+                                    <option>Dogecoin</option>
+                                </select>
+                            </label>
+                            <label class="selector"><span>Strategy</span>
+                                <select class="strategy">
+                                    <option>Respond to the rise</option>
+                                    <option>Respond to the drop</option>
+                                    <option>Respond to the consolidation</option>
+                                    <option>Respond to the accumulation</option>
+                                </select>
+                            </label>
+                        </div>
+                        <div class="sliders">
+                            <label class="slider" for="length"><span>Length of investment, month</span>
+                                <input id="length" type="range" name="length" value="1" min="1" max="18" oninput="this.nextElementSibling.value = this.value"/>
+                                <output>1</output>
+                            </label>
+                            <label class="slider" for="amount"><span>Initial amount, $</span>
+                                <input id="amount" type="range" name="amount" value="500" min="500" max="100000" oninput="this.nextElementSibling.value = this.value"/>
+                                <output>500</output>
+                            </label>
+                        </div>
                     </div>
-                    <div id="lower-section">
-                        <label class="slider">Length of investment, month
-                            <input id="length" type="range" min="1" max="18" oninput="this.nextElementSibling.value = this.value"/>
-                            <output>6</output>
-                        </label>
-                        <label class="slider">Initial amount, $
-                            <input id="amount" type="range" min="500" max="100000" oninput="this.nextElementSibling.value = this.value"/>
-                            <output>63000</output>
-                        </label>
+                    <div class="chart">
+                        <canvas id="myChart"></canvas>
                     </div>
                 </fieldset>
             </div>
