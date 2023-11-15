@@ -248,11 +248,6 @@ input {
     width: 40vh;
 }
 
-#myChart {
-    width: 300px;
-    height: 300px;
-}
-
 @media (max-width: 960px) {
     .container {
         padding: 0 40px;
