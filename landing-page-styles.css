@@ -263,7 +263,13 @@ input {
     width: 880px;
     height: 400px;
     margin: 0 40px;
-    border: 1px solid #9dffca;
+    border: 11px solid;
+    border-radius: 14px;
+    border-image: linear-gradient(45deg, #232342, #1b3146) 1;
+    -webkit-mask: 
+    linear-gradient(#fff 0 0) content-box, 
+    linear-gradient(#fff 0 0);
+    background: linear-gradient(45deg, #0e091d, #091c22);
 }
 
 #test-menu {
