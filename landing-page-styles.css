@@ -276,14 +276,16 @@ input {
     position: relative;
     width: 880px;
     height: 200px;
-    border: 1px solid #9dffca;
+    border-top: 1px solid #534376;
+    margin: 40px;
+    background: #130c1e;
+    border-radius: 14px;
 }
 /* Containers: below */
 .profit {
     position: relative;
     width: 280px;
     height: 200px;
-    border: 1px solid #9dffca;
     margin: 0;
     top: 50%;
     -ms-transform: translateY(-50%);
@@ -293,7 +295,6 @@ input {
     position: relative;
     width: 400px;
     height: 200px;
-    border: 1px solid #9dffca;
     margin: 0;
     top: 50%;
     -ms-transform: translateY(-50%);
@@ -343,7 +344,7 @@ input {
 }
 
 .test-label {
-    color: #534376;
+    color: #9dffca;
     display: block;
     text-decoration: none;
     text-transform: uppercase;
@@ -360,7 +361,16 @@ input {
 .test-start {
     width: 150px;
     height: 75px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    font-weight: 700;
+    transition: .3s;
     align-self: center;
+    background-color: #03cf75;
+    color: #fcfcfc;
+    border: 8px solid #103d34;
+    border-radius: 14px;
     margin: 0;
     top: 50%;
     -ms-transform: translateY(-50%);
