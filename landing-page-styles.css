@@ -367,15 +367,20 @@ input {
     font-weight: 700;
     transition: .3s;
     align-self: center;
-    background-color: #03cf75;
+    background: linear-gradient(180deg, #61c499, #01b869);
     color: #fcfcfc;
-    border: 8px solid #103d34;
+    border: 6px solid #103d34;
     border-radius: 14px;
     margin: 0;
     top: 50%;
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
     position: relative;
+}
+.test-start:hover {
+    box-shadow:           
+    0 0 28px #073d25;            
+    cursor: pointer;
 }
 /* Elements: above */
 
