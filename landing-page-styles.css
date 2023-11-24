@@ -284,7 +284,7 @@ input {
 /* Containers: below */
 .profit {
     position: relative;
-    width: 280px;
+    width: 380px;
     height: 200px;
     margin: 0;
     top: 50%;
@@ -293,7 +293,7 @@ input {
 }
 .test-strategy {
     position: relative;
-    width: 400px;
+    width: 300px;
     height: 200px;
     margin: 0;
     top: 50%;
@@ -312,7 +312,7 @@ input {
 /* Containers: above */
 
 /* Elements: below */
-.profit-h4 {
+#profit-h4 {
     color: #534376;
     display: block;
     text-decoration: none;
@@ -327,7 +327,7 @@ input {
     transform: translateY(-50%);
     position: relative;
 }
-.profit-h1 {
+#profit-h1 {
     color: #fcfcfc;
     display: block;
     text-decoration: none;
@@ -358,7 +358,7 @@ input {
     transform: translateY(-50%);
     position: relative;
 }
-.test-start {
+#test-start {
     width: 150px;
     height: 75px;
     text-decoration: none;
@@ -377,9 +377,11 @@ input {
     transform: translateY(-50%);
     position: relative;
 }
-.test-start:hover {
+#test-start:hover {
+    background: #103d34;
+    border: 6px solid #01b869; 
     box-shadow:           
-    0 0 28px #073d25;            
+    0 0 28px #295641;            
     cursor: pointer;
 }
 /* Elements: above */

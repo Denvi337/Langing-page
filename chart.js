@@ -4,6 +4,8 @@ google.charts.setOnLoadCallback(drawChart);
 function drawChart() {
   const sliderMultiplier = document.getElementById('amount');
   const sliderRows = document.getElementById('length');
+  const updateChartBtn = document.getElementById('test-start');
+  const highestValue = document.getElementById('profit-h1');
   const chartDiv = document.getElementById('chart_div');
 
   const data = new google.visualization.DataTable();
@@ -50,7 +52,7 @@ function drawChart() {
       gridlines: {
         color: "transparent"
       },
-      format: '#$',
+      format: '$#',
       minValue: 0
     }
   };
@@ -58,8 +60,7 @@ function drawChart() {
   const chart = new google.visualization.SteppedAreaChart(chartDiv); // Change the chart type to SteppedAreaChart
   chart.draw(data, options);
 
-  sliderRows.addEventListener('input', updateChart);
-  sliderMultiplier.addEventListener('input', updateChart);
+  updateChartBtn.addEventListener('click', updateChart);
 
   function updateChart() {
     const rowsToShow = parseInt(sliderRows.value);
@@ -73,6 +74,10 @@ function drawChart() {
     data.removeRows(0, data.getNumberOfRows());
     data.addRows(newData);
     chart.draw(data, options);
+
+    const allValues = newData.flatMap(row => row.slice(1)); // Extract all values
+    const highest = Math.max(...allValues); // Find the highest value
+    highestValue.textContent = `$${highest.toFixed(2)}`; // Display the highest value in h1
   }
 
 }
