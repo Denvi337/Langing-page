@@ -212,18 +212,24 @@ section {
     border-color: #170f24;
     border-radius: 8px;
     background-color: #170f24;
-    box-shadow: 1px 2px 1px 0px #fcfcfc;
     color: #fcfcfc;
-    height: 40px;
+    height: 50px;
+    padding-left: 10px;
+}
+.currency {
+    border-top: 1px solid #534376;
 }
 .strategy, option {
     cursor: pointer;
     border-color: #170f24;
     border-radius: 8px;
     background-color: #170f24;
-    box-shadow: 1px 2px 1px 0px #fcfcfc;
     color: #fcfcfc;
-    height: 40px;
+    height: 50px;
+    padding-left: 10px;
+}
+.strategy {
+    border-top: 1px solid #534376;
 }
 
 .selectors {
@@ -238,6 +244,73 @@ section {
     display: flex;
     flex-direction: column;
     padding: 0 40px;
+}
+.slider-wrapper {
+    display: flex;
+    cursor: pointer;
+    border-color: #170f24;
+    border-radius: 8px;
+    border-top: 1px solid #534376;
+    background-color: #170f24;
+    color: #fcfcfc;
+    width: 400px;
+    height: 50px;
+    padding: 0 8px;
+}
+
+#amount {
+    -webkit-appearance: none;
+    height: 35px;
+    outline: none;
+    transition: opacity 0.2s;
+    opacity: 0.9;
+    background: linear-gradient(to right, #61c499 0%, #01b869 0%, #d3d3d3 0%, #d3d3d3 100%);
+    border: 4px solid #103d34;
+    border-radius: 4px;
+    position: relative;
+    margin: 0;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+#amount::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 35px;
+    border-radius: 4px;
+    background: #fcfcfc;
+    cursor: pointer;
+}
+#amount:hover {
+    opacity: 1;
+}
+#length {
+    -webkit-appearance: none;
+    height: 35px;
+    outline: none;
+    transition: opacity 0.2s;
+    opacity: 0.9;
+    background: linear-gradient(to right, #ffbf00 0%, #01b869 0%, #d3d3d3 0%, #d3d3d3 100%);
+    border: 4px solid #103d34;
+    border-radius: 4px;
+    position: relative;
+    margin: 0;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+#length::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 35px;
+    border-radius: 4px;
+    background: #fcfcfc;
+    cursor: pointer;
+}
+#length:hover {
+    opacity: 1;
 }
 
 output {
