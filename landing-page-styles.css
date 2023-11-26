@@ -135,10 +135,10 @@ section {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    height: 1200px;
+    height: 900px;
 }
 
-#second-page, h1 {
+#second-page, #sp-h1 {
     color: #fcfcfc;
     display: block;
     text-decoration: none;
@@ -258,14 +258,94 @@ section {
     padding: 0 8px;
 }
 
+#ticks {
+    display: flex;
+    flex-direction: row;
+
+}
+
+input[type="range"] { 
+    margin: auto;
+    -webkit-appearance: none;
+    position: relative;
+    overflow: hidden;
+    height: 35px;
+    width: 400px;
+    cursor: pointer;
+    border-radius: 0; /* iOS */
+}
+
+::-webkit-slider-runnable-track {
+    background: transparent;
+}
+
+/*
+ * 1. Set to 0 width and remove border for a slider without a thumb
+ * 2. Shadow is negative the full width of the input and has a spread 
+ *    of the width of the input.
+ */
+::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 20px; /* 1 */
+    height: 40px;
+    background: transparent;
+    box-shadow: -200px 0 0 200px dodgerblue; /* 2 */
+    border: 2px solid #999; /* 1 */
+}
+
+::-moz-range-track {
+    height: 40px;
+    background: transparent;
+}
+
+::-moz-range-thumb {
+    background: transparent;
+    height: 40px;
+    width: 20px;
+    border: 3px solid #999;
+    border-radius: 0 !important;
+    box-shadow: -200px 0 0 200px dodgerblue;
+    box-sizing: border-box;
+}
+
+::-ms-fill-lower { 
+    background: dodgerblue;
+}
+
+::-ms-thumb { 
+    background: transparent;
+    border: 2px solid #999;
+    height: 40px;
+    width: 20px;
+    box-sizing: border-box;
+}
+
+::-ms-ticks-after { 
+    display: none; 
+}
+
+::-ms-ticks-before { 
+    display: none; 
+}
+
+::-ms-track { 
+    background: transparent;
+    color: transparent;
+    height: 40px;
+    border: none;
+}
+
+::-ms-tooltip { 
+    display: none;
+}
+
 #amount {
     -webkit-appearance: none;
     height: 35px;
     outline: none;
     transition: opacity 0.2s;
-    opacity: 0.9;
-    background: linear-gradient(to right, #61c499 0%, #01b869 0%, #d3d3d3 0%, #d3d3d3 100%);
-    border: 4px solid #103d34;
+    opacity: 0.8;
+    background: transparent;
     border-radius: 4px;
     position: relative;
     margin: 0;
@@ -285,14 +365,14 @@ section {
 #amount:hover {
     opacity: 1;
 }
+
 #length {
     -webkit-appearance: none;
     height: 35px;
     outline: none;
     transition: opacity 0.2s;
-    opacity: 0.9;
-    background: linear-gradient(to right, #ffbf00 0%, #01b869 0%, #d3d3d3 0%, #d3d3d3 100%);
-    border: 4px solid #103d34;
+    opacity: 0.8;
+    background: transparent;
     border-radius: 4px;
     position: relative;
     margin: 0;
@@ -458,6 +538,25 @@ input {
     cursor: pointer;
 }
 /* Elements: above */
+
+#third-page {
+    background-color: #0e0719;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 1200px;
+}
+
+#third-page, #tp-h1 {
+    color: #fcfcfc;
+    display: block;
+    text-decoration: none;
+    font-size: 2em;
+    font-weight: 700;
+    transition: .3s;
+    padding-top: 85px;
+}
 
 @media (max-width: 960px) {
     .container {

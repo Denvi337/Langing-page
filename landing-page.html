@@ -46,7 +46,7 @@
     </div>
     <main>
         <section id="second-page">
-            <h1>AI Performance on Historical Data</h1>
+            <h1 id="sp-h1">AI Performance on Historical Data</h1>
             <div id="menu-function">
                 <fieldset id="menu-section">
                     <div id="menu">
@@ -77,7 +77,7 @@
                             </label>
                             <label class="slider" for="amount"><span>Initial amount, $</span>
                                 <div class="slider-wrapper">
-                                    <input id="amount" type="range" class="range-slider" name="amount" value="500" min="500" max="100000" oninput="this.nextElementSibling.value = this.value"/>
+                                    <input id="amount" type="range" class="range-slider" list="ticks" name="amount" value="500" min="500" max="100000" oninput="this.nextElementSibling.value = this.value"/>
                                 </div>
                                 <output for="amount" id="sliderAmount">500</output>
                             </label>
@@ -99,6 +99,11 @@
                     </div>
                 </fieldset>
             </div>
+        </section>
+        <section id="third-page">
+            <h1 id="tp-h1">Get started today</h1>
+
+
         </section>
     </main>    
 </body>
