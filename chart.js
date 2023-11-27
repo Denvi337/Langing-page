@@ -42,6 +42,7 @@ function drawChart() {
     areaOpacity: 0.3, // Adjust the opacity of the area
     backgroundColor: "transparent",
     colors: ['#03cf75', '#dcaf2d'],
+    height: '400px',
     legendTextStyle: { color: '#534376' },
     titleTextStyle: { color: '#FFF' },
     hAxis: {

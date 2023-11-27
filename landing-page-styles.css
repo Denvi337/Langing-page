@@ -557,6 +557,15 @@ input {
     transition: .3s;
     padding-top: 85px;
 }
+#tp-function {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#tp-function, #tp-section {
+    display: flex;
+    flex-direction: column;
+}
 
 @media (max-width: 960px) {
     .container {
