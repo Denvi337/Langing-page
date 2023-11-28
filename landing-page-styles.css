@@ -117,7 +117,7 @@ section {
     align-items: center;
 }
 
-#fp-low-text, p {
+#fp-low-text, #fp-p {
     color: #9dffca;
     display: block;
     text-decoration: none;
@@ -565,6 +565,105 @@ input {
 #tp-function, #tp-section {
     display: flex;
     flex-direction: column;
+    align-items: center;
+}
+#tp-section {
+    max-width: 960px;
+    height: 700px;
+    border: 1px solid #fcfcfc;
+    margin: 80px 0;
+}
+#tp-container {
+    border: 1px solid #3c3267;
+    width: 880px;
+    height: 700px;
+    display: flex;
+    flex-direction: row;
+}
+#tp-left-side {
+    border: 1px solid #01b869;
+    width: 350px;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+}
+#tp-h3 {
+    color: #fcfcfc;
+    display: block;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: 700;
+    transition: .3s;
+    position: sticky;
+    padding-top: 60px;
+    padding-left: 35px;
+    text-align: left;
+}
+#tp-p-bigger {
+    color: #fcfcfc;
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.6em;
+    font-weight: 500;
+    transition: .3s;
+    padding-top: 40px;
+    padding-left: 35px;
+    text-align: left;
+}
+#tp-p-smaller {
+    color: #fcfcfc;
+    display: block;
+    text-decoration: none;
+    font-size: 0.5em;
+    font-weight: 500;
+    transition: .3s;
+    padding-top: 30px;
+    padding-left: 35px;
+    text-align: left;
+}
+
+#tp-right-side {
+    border: 1px solid #01a0b8;
+    width: 530px;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+}
+#short-167 {
+    border: 1px solid #01a0b8;
+    width: 400px;
+    height: 100px;
+    margin-top: 60px;
+    margin-left: 60px;
+}
+#short-173 {
+    border: 1px solid #01a0b8;
+    width: 400px;
+    height: 100px;
+    margin-top: 20px;
+    margin-left: 60px;
+}
+#short-183 {
+    border: 1px solid #01a0b8;
+    width: 400px;
+    height: 100px;
+    margin-top: 20px;
+    margin-left: 60px;
+}
+#take-profit-167 {
+    border: 1px solid #01a0b8;
+    width: 400px;
+    height: 100px;
+    margin-top: 20px;
+    margin-left: 60px;
+}
+#unrealized-profit {
+    border: 1px solid #01a0b8;
+    width: 400px;
+    height: 100px;
+    margin-top: 20px;
+    margin-left: 60px;
 }
 
 @media (max-width: 960px) {
@@ -579,6 +678,9 @@ input {
     }
     .logo img {
         width: 150px;
+    }
+    i {
+        
     }
     nav {
         padding: 40px 0;
