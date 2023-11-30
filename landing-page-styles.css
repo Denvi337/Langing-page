@@ -632,38 +632,94 @@ input {
 }
 #short-167 {
     border: 1px solid #01a0b8;
-    width: 400px;
+    width: 450px;
     height: 100px;
     margin-top: 60px;
-    margin-left: 60px;
+    margin-left: 40px;
+    display: flex;
+    flex-direction: row;
 }
 #short-173 {
     border: 1px solid #01a0b8;
-    width: 400px;
+    width: 450px;
     height: 100px;
     margin-top: 20px;
-    margin-left: 60px;
+    margin-left: 40px;
+    display: flex;
+    flex-direction: row;
 }
 #short-183 {
     border: 1px solid #01a0b8;
-    width: 400px;
+    width: 450px;
     height: 100px;
     margin-top: 20px;
-    margin-left: 60px;
+    margin-left: 40px;
+    display: flex;
+    flex-direction: row;
 }
 #take-profit-167 {
     border: 1px solid #01a0b8;
-    width: 400px;
+    width: 450px;
     height: 100px;
     margin-top: 20px;
-    margin-left: 60px;
+    margin-left: 40px;
+    display: flex;
+    flex-direction: row;
 }
 #unrealized-profit {
     border: 1px solid #01a0b8;
-    width: 400px;
+    width: 450px;
     height: 100px;
     margin-top: 20px;
-    margin-left: 60px;
+    margin-left: 40px;
+    display: flex;
+    flex-direction: row;
+}
+
+.icon {
+    flex: 0 0 auto; /* To prevent the icon from growing or shrinking */
+    margin: 25px 0;
+    padding-left: 25px;
+}
+.upper-label {
+    color: #534376;
+    display: block;
+    text-decoration: none;
+    font-size: 0.5em;
+    font-weight: 700;
+    transition: .3s;
+    margin: 15px 0;
+    padding-left: 25px;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    position: relative;
+}
+.right-label {
+    color: #534376;
+    display: block;
+    text-decoration: none;
+    font-size: 0.7em;
+    font-weight: 700;
+    transition: .3s;
+    margin: 18px;
+    padding-left: 20px;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    position: relative;
+}
+.right-button {
+    color: #534376;
+    font-size: 0.7em;
+    font-weight: 700;
+    transition: .3s;
+    margin: 18px;
+    align-items: center;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    position: relative;
 }
 
 @media (max-width: 960px) {
@@ -678,9 +734,6 @@ input {
     }
     .logo img {
         width: 150px;
-    }
-    i {
-        
     }
     nav {
         padding: 40px 0;
