@@ -540,7 +540,8 @@ input {
 /* Elements: above */
 
 #third-page {
-    background-color: #0e0719;
+    background: radial-gradient(#1b172e, #0b0414);
+    box-shadow: -48px -200px 4841px 200px #0e0719 inset;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -570,18 +571,22 @@ input {
 #tp-section {
     max-width: 960px;
     height: 700px;
-    border: 1px solid #fcfcfc;
     margin: 80px 0;
+    border: none;
 }
 #tp-container {
-    border: 1px solid #3c3267;
     width: 880px;
     height: 700px;
     display: flex;
     flex-direction: row;
 }
 #tp-left-side {
-    border: 1px solid #01b869;
+    border-top: 3px solid transparent;
+    border-left: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+    border-radius: 7px;
+    background: linear-gradient(180deg, #2a2345, #171228) padding-box,
+              linear-gradient(180deg, #3c3267, #1f1632) border-box;
     width: 350px;
     height: 700px;
     display: flex;
@@ -624,23 +629,31 @@ input {
 }
 
 #tp-right-side {
-    border: 1px solid #01a0b8;
+    border: 3px solid transparent;
+    border-radius: 7px;
+    background: linear-gradient(180deg, #181520, #211d34) padding-box,
+              linear-gradient(180deg, #3c3267, #09b775) border-box;
     width: 530px;
     height: 700px;
     display: flex;
     flex-direction: column;
 }
 #short-167 {
-    border: 1px solid #01a0b8;
+    border-top: 1px solid #534376;
+    border-radius: 7px;
+    background: #231b32;
     width: 450px;
     height: 100px;
     margin-top: 60px;
     margin-left: 40px;
     display: flex;
     flex-direction: row;
+    overflow: hidden;
 }
 #short-173 {
-    border: 1px solid #01a0b8;
+    border-top: 1px solid #534376;
+    border-radius: 7px;
+    background: #231b32;
     width: 450px;
     height: 100px;
     margin-top: 20px;
@@ -649,7 +662,9 @@ input {
     flex-direction: row;
 }
 #short-183 {
-    border: 1px solid #01a0b8;
+    border-top: 1px solid #534376;
+    border-radius: 7px; 
+    background: #231b32;
     width: 450px;
     height: 100px;
     margin-top: 20px;
@@ -658,7 +673,10 @@ input {
     flex-direction: row;
 }
 #take-profit-167 {
-    border: 1px solid #01a0b8;
+    border: 6px solid transparent;
+    border-radius: 7px;
+    background: linear-gradient(45deg, #282c49, #243f4a) padding-box,
+              linear-gradient(45deg, #24364b, #23444e) border-box;
     width: 450px;
     height: 100px;
     margin-top: 20px;
@@ -667,7 +685,10 @@ input {
     flex-direction: row;
 }
 #unrealized-profit {
-    border: 1px solid #01a0b8;
+    border: 6px solid transparent;
+    border-radius: 7px;
+    background: linear-gradient(180deg, #61c499, #01b869) padding-box,
+              linear-gradient(45deg, #0d5a46, #0f5641) border-box;
     width: 450px;
     height: 100px;
     margin-top: 20px;
@@ -678,45 +699,140 @@ input {
 
 .icon {
     flex: 0 0 auto; /* To prevent the icon from growing or shrinking */
-    margin: 25px 0;
-    padding-left: 25px;
+    width: 50px;
+    height: 100px;
+    padding-top: 25px;
+    padding-left: 20px;
 }
 .upper-label {
-    color: #534376;
+    color: #fcfcfc;
     display: block;
     text-decoration: none;
+    text-transform: capitalize;
+    white-space: nowrap;
     font-size: 0.5em;
     font-weight: 700;
     transition: .3s;
-    margin: 15px 0;
-    padding-left: 25px;
-    top: 50%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
     position: relative;
+    top: 25%; /* Adjust the vertical position as a percentage */
+    left: 5%; /* Adjust the horizontal position as a percentage */
 }
-.right-label {
-    color: #534376;
+.upper-label-last {
+    color: #fcfcfc;
+    display: block;
+    text-decoration: none;
+    text-transform: capitalize;
+    white-space: nowrap;
+    font-size: 0.7em;
+    font-weight: 700;
+    transition: .3s;
+    text-shadow: 0.2px 0.2px 0.2px #0b0414;
+    position: relative;
+    -webkit-text-stroke: 0.1px black;
+    top: 23%; /* Adjust the vertical position as a percentage */
+    left: 5%; /* Adjust the horizontal position as a percentage */
+}
+.lower-p {
+    color: #8674a4;
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    white-space: nowrap;
+    font-size: 0.4em;
+    font-weight: 700;
+    transition: .3s;
+    position: relative;
+    top: 55%; /* Adjust the vertical position as a percentage */
+    left: -43.8%; /* Adjust the horizontal position as a percentage */
+}
+.lower-p-p {
+    color: #8674a4;
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    white-space: nowrap;
+    font-size: 0.4em;
+    font-weight: 700;
+    transition: .3s;
+    position: relative;
+    top: 55%; /* Adjust the vertical position as a percentage */
+    left: -53.8%; /* Adjust the horizontal position as a percentage */
+}
+.lower-p-u {
+    color: #fcfcfc;
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    white-space: nowrap;
+    font-size: 0.4em;
+    font-weight: 700;
+    transition: .3s;
+    text-shadow: 0.2px 0.2px 0.2px #0b0414;
+    position: relative;
+    -webkit-text-stroke: 0.1px black;
+    top: 58%; /* Adjust the vertical position as a percentage */
+    left: -13%; /* Adjust the horizontal position as a percentage */
+}
+.right-label1 {
+    color: #fcfcfc;
     display: block;
     text-decoration: none;
     font-size: 0.7em;
     font-weight: 700;
     transition: .3s;
-    margin: 18px;
-    padding-left: 20px;
-    top: 50%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
     position: relative;
+    top: 37%; /* Adjust the vertical position as a percentage */
+    left: -7.5%; /* Adjust the horizontal position as a percentage */
 }
-.right-button {
-    color: #534376;
+.right-label2 {
+    color: #fcfcfc;
+    display: block;
+    text-decoration: none;
     font-size: 0.7em;
     font-weight: 700;
     transition: .3s;
-    margin: 18px;
+    position: relative;
+    top: 37%; /* Adjust the vertical position as a percentage */
+    left: -6.5%; /* Adjust the horizontal position as a percentage */
+}
+.right-label3 {
+    color: #fcfcfc;
+    display: block;
+    text-decoration: none;
+    font-size: 0.7em;
+    font-weight: 700;
+    transition: .3s;
+    position: relative;
+    top: 37%; /* Adjust the vertical position as a percentage */
+    left: -7.5%; /* Adjust the horizontal position as a percentage */
+}
+.right-label4 {
+    color: #fcfcfc;
+    display: block;
+    text-decoration: none;
+    font-size: 0.7em;
+    font-weight: 700;
+    transition: .3s;
+    position: relative;
+    top: 37%; /* Adjust the vertical position as a percentage */
+    left: -6%; /* Adjust the horizontal position as a percentage */
+}
+.right-button {
+    color: #00ca78;
+    width: 100px;
+    height: 50px;
+    font-size: 0.4em;
+    font-weight: 700;
+    transition: .3s;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 1px 1px 0px #0e0719;
+    text-transform: uppercase;
     align-items: center;
+    text-shadow: 0.2px 0.2px 0.2px #0b0414;
+    margin: 0;
     top: 50%;
+    left: 10px;
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
     position: relative;
