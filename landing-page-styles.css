@@ -142,7 +142,7 @@ section {
     color: #fcfcfc;
     display: block;
     text-decoration: none;
-    font-size: 1.6em;
+    font-size: 1.7em;
     font-weight: 700;
     transition: .3s;
     padding-top: -100vh;
@@ -289,7 +289,7 @@ input[type="range"] {
     width: 20px; /* 1 */
     height: 40px;
     background: transparent;
-    box-shadow: -200px 0 0 200px dodgerblue; /* 2 */
+    box-shadow: -200px 0 0 200px #01b869; /* 2 */
     border: 2px solid #999; /* 1 */
 }
 
@@ -304,12 +304,12 @@ input[type="range"] {
     width: 20px;
     border: 3px solid #999;
     border-radius: 0 !important;
-    box-shadow: -200px 0 0 200px dodgerblue;
+    box-shadow: -200px 0 0 200px #01b869;
     box-sizing: border-box;
 }
 
 ::-ms-fill-lower { 
-    background: dodgerblue;
+    background: #01b869;
 }
 
 ::-ms-thumb { 
@@ -546,7 +546,7 @@ input {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    height: 1200px;
+    height: 1100px;
 }
 
 #third-page, #tp-h1 {
@@ -836,6 +836,36 @@ input {
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
     position: relative;
+}
+
+#fourth-page {
+    background: linear-gradient(45deg, #0a0615, #13221d);
+    box-shadow: -48px -200px 4841px 200px #0e0719 inset;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 1200px;
+    border: 1px solid #00ca78;
+}
+#fourth-page, #fp-h1 {
+    color: #fcfcfc;
+    display: block;
+    text-decoration: none;
+    font-size: 2em;
+    font-weight: 700;
+    transition: .3s;
+    padding-top: 50px;
+}
+#profit-clock {
+    width: 700px;
+    height: 200px;
+    border: 1px solid #00ca78;
+    margin: 50px 0;
+    position: relative;
+    top:8%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 @media (max-width: 960px) {
