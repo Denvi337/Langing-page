@@ -860,12 +860,164 @@ input {
 #profit-clock {
     width: 700px;
     height: 200px;
-    border: 1px solid #00ca78;
-    margin: 50px 0;
+    border: 9px solid #1c3b33;
+    border-radius: 14px;
+    background: linear-gradient(180deg, #102926, #131b1e) padding-box;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
     position: relative;
     top:8%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+#estimate-profit {
+    margin: 0;
+    color: #fcfcfc;
+    display: block;
+    text-decoration: none;
+    font-size: 4em;
+    font-weight: 700;
+    transition: .3s;
+    align-self: center;
+    position: absolute;
+    top: 48%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+#fp-plan-slider {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#fp-slider {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    border-color: #170f24;
+    border-radius: 8px;
+    border-top: 1px solid #534376;
+    background-color: #170f24;
+    color: #fcfcfc;
+    width: 60%;
+    height: 50px;
+    padding: 0 8px;
+    position: relative;
+}
+#offer-plan-slider {
+    width: 100%;
+}
+.slider {
+    width: 60%;
+}
+.slider-values {
+    display: flex;
+    padding-top: 10px;
+    width: 60%;
+    padding-left: 0 15px;
+    padding-right: 0 15px;
+}
+.slider-values span {
+    margin: 0;
+    color: #fcfcfc;
+    display: block;
+    text-decoration: none;
+    font-size: 0.3em;
+    font-weight: 700;
+    transition: .3s;
+    align-self: center;
+    margin: 0 3.5vh;
+}
+.slider-values span.active:before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 10px;
+    height: 10px;
+    background-color: #f00; /* Change this to your preferred color */
+    border-radius: 50%;
+}
+.slider-values span.active {
+    background-color: rgb(3, 10, 138); /* Change this to your preferred color */
+}
+#plan-offer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#div-offer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #09b775;
+    border-radius: 14px;
+    width: 700px;
+    height: 350px;
+    margin-top: 50px;
+    position: relative;
+}
+#upper-offer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 700px;
+    height: 200px;
+    position: relative;
+}
+#offer-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#offer-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#lower-offer {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid #09b775;
+    border-radius: 14px;
+    width: 700px;
+    height: 150px;
+}
+.offer-button {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    padding-top: 37px;
+}
+#button-start {
+    width: 150px;
+    height: 75px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.5em;
+    font-weight: 700;
+    transition: .3s;
+    align-self: center;
+    background: linear-gradient(180deg, #61c499, #01b869);
+    color: #fcfcfc;
+    border: 6px solid #103d34;
+    border-radius: 14px;
+}
+#button-start:hover {
+    background: #103d34;
+    border: 6px solid #01b869; 
+    box-shadow:           
+    0 0 28px #295641;            
+    cursor: pointer;
+}
+#label-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
 }
 
 @media (max-width: 960px) {

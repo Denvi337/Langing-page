@@ -150,10 +150,43 @@
         <section id="fourth-page">
             <h1 id="fp-h1">Estimate Your Profit</h1>
             <div id="profit-clock">
-                
+                <h1 id="estimate-profit">$238,042</h1>
             </div>
-            <div id="fp-slider"></div>
-            <div id="plan-offer"></div>
+            <div id="fp-plan-slider">
+                <div id="fp-slider">
+                    <input id="offer-plan-slider" type="range" class="slider" name="offer-plan-slider" value="1" min="1" max="5" oninput="this.nextElementSibling.value = this.value"/>
+                </div>
+                <div class="slider-values">
+                    <span data-value="1">Poor</span>
+                    <span data-value="2">Fair</span>
+                    <span data-value="3">Average</span>
+                    <span data-value="4">Good</span>
+                    <span data-value="5">Excellent</span>
+                </div>
+            </div>
+            <div id="plan-offer">
+                <div id="div-offer">
+                    <div id="upper-offer">
+                        <div id="offer-left">
+                            <label id="best-plan">sadasd</label>
+                            <p>1</p>
+                        </div>
+                        <div id="offer-right">
+                            <label id="cost">asasdsa</label>
+                            <p>2</p>
+                        </div>
+                    </div>
+                    <div id="lower-offer">
+                        <div class="offer-button">
+                            <button id="button-start">Start Now</button>
+                        </div>
+                        <div id="label-button">
+                            <label id="cost">asas</label>
+                            <p>4</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div id="footer"></div>
         </section>
     </main>    
